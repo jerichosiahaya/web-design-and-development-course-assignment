@@ -1,0 +1,26 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+.content-wrapper {
+    padding: 5px;
+}
+
+.content img {
+    max-width: 360px;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.footer {
+    margin: 2em;
+}

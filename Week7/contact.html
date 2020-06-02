@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KONTAKKU | Week 7</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="file_pendukung_modul_7/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row h-100 justify-content-center align-items-center"
+            style="background-color: #ccc; padding-top: 20px; padding-bottom: 20px;">
+            <h3>KONTAK AKU DONG!</h3>
+        </div>
+    </div>
+    <nav class="nav justify-content-center" style="background-color: #2a2a2a; width: 100%;">
+        <li class="nav-item">
+            <a class="nav-link active" href="main.html">BIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="alamat.html">ALAMAT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+    </nav>
+
+    <div class="container" style="margin-top: 20px; border: 1px solid #ccc; padding: 1em; border-radius: 5px;">
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input class="form-control" type="text" id="nama" placeholder="" style="font-family: monospace;">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                    style="font-family: monospace;">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" style="font-family: monospace;"></textarea>
+            </div>
+            <button type="button" class="form-control btn btn-primary" data-toggle="modal"
+                data-target="#myModal">SEND</button>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="judulModal"
+                        style="font-family: monospace; font-weight: bold; font-size: 14pt;"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="isiModal" style="font-family: monospace;"></div>
+                <div class="modal-footer">
+                    <div id="pengirimModal" style="font-family: monospace;"></div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="container-fluid" style="background-color: #ccc;">
+        <div class=" row h-100 justify-content-center align-items-center"
+            style="padding-top: 40px; padding-bottom: 30px; margin-top: 20px;">
+            <p>~ copyright : Jericho Cristofel Siahaya - Lab Web Design ~</p>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class=" browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your
+            browser</a> to improve your experience.</p>
+        <![endif]-->
+    <script>
+        $('#myModal').on('show.bs.modal', function (e) {
+            var nama = $('#nama').val();
+            var email = $('#email').val();
+            var pesan = $('#pesan').val();
+            $('#judulModal').text(nama);
+            $('#isiModal').text(pesan);
+            $('#pengirimModal').text("Pengirim pesan : " + email);
+        })
+    </script>
+
+</body>
+
+</html>

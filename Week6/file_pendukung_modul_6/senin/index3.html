@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hello Again</title>
+</head>
+<body>
+
+<div id="bungkus"><div>Anak Pertama</div></div>
+<button>Buat Anak</button>
+<button>Hapus Semua Anak</button>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+
+$("button:first").click(function(){
+	$("#bungkus").append("<div>Adiknya</div>");
+});
+
+$("button:last").click(function(){
+	$("#bungkus").empty();
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM - Document Object Model</title>
+</head>
+<body>
+
+<div id="rumah">
+	<div>Anak sulung</div>
+</div>
+
+<input type="text" value="" />
+<button>Buat anak</button>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+
+$("button").click(function(){
+	// dapatkan valui dari text input, simpan dalam variable nama
+	nama = $("input").val();
+	$("#rumah").append("<div>" + nama + "</div>");
+	$("input").val("");
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Buat halaman web menggunakan HTML & CSS dari desain yang diberikan (design.pdf).
+
+Ketentuan:
+
+Buat Layout halaman web menggunakan Grid bagi mahasiswa dengan NIM Ganjil.
+Buat Layout halaman web menggunakan Flexbox bagi mahasiswa dengan NIM Genap.

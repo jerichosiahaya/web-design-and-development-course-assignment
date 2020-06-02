@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM - Document Object Model</title>
+</head>
+<body>
+
+<div id="rumah">
+	<div>Anak sulung</div>
+</div>
+
+<input type="text" value="" />
+<button>Buat anak</button>
+
+<script>
+
+target = document.getElementsByTagName("button")[0];
+input = document.getElementsByTagName("input")[0];
+target.addEventListener("click", produksiAnak);
+input.addEventListener("keydown", enter);
+
+function enter(wkwk){
+	if(wkwk.keyCode == 13) produksiAnak();
+}
+
+function produksiAnak(){
+	anakDiv = document.createElement("div");
+	input = document.getElementsByTagName("input")[0];
+	txt = input.value;
+	anakTxt = document.createTextNode(txt);
+	anakDiv.appendChild(anakTxt);
+	rumah = document.getElementById("rumah");
+	rumah.appendChild(anakDiv);
+	input.value = "";
+}
+
+</script>
+
+</body>
+</html>

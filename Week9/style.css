@@ -1,0 +1,83 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-mod {
+  display: inline;
+}
+
+.tb {
+  float: left;
+  clear: none;
+}
+
+.mod-tb {
+  margin-left: 2em;
+  margin-top: 3em;
+}
+
+.container-update-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-update {
+  width: 120%;
+}
+
+.more-width {
+  margin-left: 5em;
+  margin-top: 2.5em;
+}
+
+.info {
+
+  padding-top: 1em;
+  border-top: 1px solid grey;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+  margin-left: 5px;
+}
+
+.form {
+  margin-left: 2em;
+}
+
+.mod {
+  margin-left: 2em;
+  width: 20%;
+}
+
+.image {
+  margin-right: 10em;
+  margin-top: 1em;
+  width: 50%;
+  content:url(https://try.airtable.com/static/database/hero.png);
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+[readonly='readonly'] {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.mod-s {
+  margin-left: 2em;
+}
+
+.p-mod {
+  margin: 1em;
+}
+
+.p-mod a {
+  text-decoration: none;
+  color: #2a2a2a;
+}

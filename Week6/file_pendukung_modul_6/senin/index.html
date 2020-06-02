@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hello Again</title>
+</head>
+<body>
+
+<div id="bungkus"><div>Anak Pertama</div></div>
+<button>Buat Anak</button>
+<button>Hapus Semua Anak</button>
+
+<script>
+
+btnBuat = document.getElementsByTagName("button")[0];
+btnHapus = document.getElementsByTagName("button")[1];
+
+btnBuat.addEventListener("click", buatAnak);
+btnHapus.addEventListener("click", hapusAnak);
+
+function hapusAnak(){
+	ortu = document.getElementById("bungkus");
+	jmlAnak = ortu.childNodes.length;
+	for(i=0; i<=jmlAnak; i++){
+		ortu.removeChild(ortu.childNodes[0]);
+		alert("pause");
+	}
+}
+
+function buatAnak(){
+	anakDiv = document.createElement("div");
+	anakTxt = document.createTextNode("Adiknya");
+	anakDiv.appendChild(anakTxt);
+	bungkus = document.getElementById("bungkus");
+	bungkus.appendChild(anakDiv);
+}
+
+</script>
+
+</body>
+</html>
