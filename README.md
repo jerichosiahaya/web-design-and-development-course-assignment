@@ -1,2 +1,2 @@
-# web-design-and-development-course-assignment
-Collection of my web design and development course assignment
+# WEB DESIGN & DEVELOPMENT COURSE (AND ALSO ASSIGNMENT)
+Collection of my web design and development course assignment from college. Enjoy!
